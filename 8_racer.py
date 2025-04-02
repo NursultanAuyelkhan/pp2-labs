@@ -74,21 +74,6 @@ class Coin(pygame.sprite.Sprite):
         else:
             COINS += 1
         global c1,c2,c3,c4,c5
-        if not c1 and COINS>=10:
-            SPEED+=1
-            c1=True
-        if not c2 and COINS>=20:
-            SPEED+=1
-            c2=True
-        if not c3 and COINS>=30:
-            SPEED+=1
-            c3=True
-        if not c4 and COINS>=40:
-            SPEED+=1
-            c4=True
-        if not c5 and COINS>=50:
-            SPEED+=1
-            c5=True
         self.rect.top = random.randint(40, SCREEN_WIDTH - 40)
         self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), random.randint(40, SCREEN_HEIGHT - 40))
 
