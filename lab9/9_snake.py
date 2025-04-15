@@ -30,8 +30,8 @@ class Snake:
     def __init__(self, x_start, y_start):
         self.x = x_start  
         self.y = y_start  
-        self.w = 15  
-        self.h = 15  
+        self.w = 30  
+        self.h = 30  
         self.x_dir = 1  
         self.y_dir = 0  
         self.history = [[self.x, self.y]]  

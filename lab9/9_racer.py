@@ -49,7 +49,7 @@ class Enemy(pygame.sprite.Sprite):
         global SCORE
         self.rect.move_ip(0, SPEED)
         if (self.rect.top > 600):
-            SCORE += 1
+            SCORE += 1    
             self.rect.top = 0
             self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
 
@@ -206,6 +206,9 @@ while True:
         if coin.rect.top > SCREEN_HEIGHT:
             coin.rect.y = -coin.rect.height
             coin.rect.x = random.randint(40, SCREEN_WIDTH - 40)
+        
+    if SCORE >= 10:
+        SPEED += 0.1
 
     pygame.display.update()
     FramePerSec.tick(FPS)

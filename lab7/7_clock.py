@@ -24,8 +24,8 @@ while running:
     second = current_time.tm_sec
 
 
-    minute_angle = minute * 6 + (second / 60) * 6
-    second_angle = second * 6
+    minute_angle = minute * 6 + (second / 60) * 10
+    second_angle = second * 10
 
     screen.blit(mike_clock, (0,0))
 
