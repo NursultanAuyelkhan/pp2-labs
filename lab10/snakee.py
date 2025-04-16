@@ -50,8 +50,7 @@ scores = get_scores(player_name)
 if scores: 
     print("Your previous scores:") 
     for score, level in scores: 
-        print(f"Score: {score}, Level: {level}") 
-    sys.exit()   
+        print(f"Score: {score}, Level: {level}")   
  
 def check_collision(pos): 
     if pos[0] < 0 or pos[0] > SCREEN_WIDTH - 10 or pos[1] < 0 or pos[1] > SCREEN_HEIGHT - 10: 
