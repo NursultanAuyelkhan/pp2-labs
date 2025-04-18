@@ -45,7 +45,6 @@ def get_scores(name):
     return results 
  
 player_name = input("Enter your name: ") 
-player_name = player_name.encode('utf-8', 'ignore').decode('utf-8') 
 scores = get_scores(player_name) 
 if scores: 
     print("Your previous scores:") 
